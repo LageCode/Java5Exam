@@ -1,1 +1,10 @@
 com/helbexam/library/LibraryApplication.class
+com/helbexam/library/repository/BookRepository.class
+com/helbexam/library/dto/BookDTO.class
+com/helbexam/library/model/Book.class
+com/helbexam/library/repository/AuthorRepository.class
+com/helbexam/library/dao/AuthorDAO.class
+com/helbexam/library/controller/AuthorController.class
+com/helbexam/library/dto/AuthorDTO.class
+com/helbexam/library/service/AuthorService.class
+com/helbexam/library/model/Author.class

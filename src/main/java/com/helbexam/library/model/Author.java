@@ -1,7 +1,9 @@
 package com.helbexam.library.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.*;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -21,6 +23,6 @@ public class Author {
     @Column(nullable = false, length = 45)        
     private String lastname;
 
-    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Book> books = new ArrayList<>();
 }
