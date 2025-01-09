@@ -1,6 +1,8 @@
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/LibraryApplication.java
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/controller/AuthorController.java
+/home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/controller/BookController.java
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/dao/AuthorDAO.java
+/home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/dao/BookDAO.java
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/dto/AuthorDTO.java
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/dto/BookDTO.java
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/model/Author.java
@@ -8,3 +10,4 @@
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/repository/AuthorRepository.java
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/repository/BookRepository.java
 /home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/service/AuthorService.java
+/home/helb/exam/Java5Exam/src/main/java/com/helbexam/library/service/BookService.java

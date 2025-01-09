@@ -10,9 +10,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.helbexam.library.dao.AuthorDAO;
 import com.helbexam.library.dto.AuthorDTO;
+import com.helbexam.library.dto.AuthorDetailedDTO;
+import com.helbexam.library.dto.BookDTO;
 import com.helbexam.library.model.Author;
-import com.helbexam.library.repository.AuthorRepository;
-import com.helbexam.library.repository.BookRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -35,10 +35,17 @@ public class AuthorService {
         return authorDTO;
     }
 
-    public AuthorDTO getAuthorById(Long id) {
+    public AuthorDetailedDTO getAuthorDetailedById(Long id) {
         Author author = authorDAO.findAuthorById(id);    
-        AuthorDTO authorDTO = new AuthorDTO();
+        AuthorDetailedDTO authorDTO = new AuthorDetailedDTO();
         BeanUtils.copyProperties(author, authorDTO);
+        authorDTO.setBooks(author.getBooks().stream().map((book) -> {
+            BookDTO bookDTO = new BookDTO();
+            BeanUtils.copyProperties(book, bookDTO);
+            return bookDTO;
+        }).toList());
+
+
         return authorDTO;
     }
 
