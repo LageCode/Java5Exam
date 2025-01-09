@@ -1,4 +1,7 @@
 # Java5Exam
+
+> by Léo Calvo
+
 Spring boot project for Java 5 exam
 
 Simulates a library RESTful API
